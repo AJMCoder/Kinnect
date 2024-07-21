@@ -1,0 +1,97 @@
+.Login {
+    height: 100vh;
+    background-color: rgb(36, 124, 151);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Login .card {
+    display: flex;
+    background-color: rgb(69, 87, 168);
+    width: 50%;
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 600px;
+}
+
+.Login .card .left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, black, transparent), url("https://images.pexels.com/photos/1036804/pexels-photo-1036804.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
+    background-size: cover;
+    gap: 20px;
+    padding: 40px;
+    color: white;
+}
+
+.Login .card .left h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+.Login .card .left p {
+    font-size: 15px;
+}
+.Login .card .left span {
+    font-size: 12px;
+}
+.Login .card .left button {
+    padding: 13px;
+    border: none;
+    width: 50%;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.Login .card .left button:hover {
+    background-color: rgb(69, 87, 168);
+    transform: scale(1.1);
+}
+
+.Login .card .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 20px;
+}
+
+.Login .card .right h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.Login .card .right form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.Login .card .right form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    border-bottom: 1px solid black;
+}
+.Login .card .right form button {
+    padding: 13px;
+    border: none;
+    background-color: rgb(12, 170, 117);
+    color: white;
+    font-weight: bold;
+
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.8s;
+}
+
+.Login .card .right form button:hover {
+    background-color: rgb(12, 170, 25);
+    transform: scale(1.1);
+}
