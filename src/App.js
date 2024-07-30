@@ -14,7 +14,7 @@ import RightPanel from './components/rightpanel/RightPanel';
 
 function App() {
 
-  const currentUser = null;
+  const currentUser = true;
 
   const Layout = ()=>{
     return(
