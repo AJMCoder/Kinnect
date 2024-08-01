@@ -1,0 +1,68 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #6189e0;
+  color: #fff;
+  height: 30px;
+  font-size: 1.2rem;
+  border-bottom: 2px solid #81888b;
+
+}
+
+.navBar .navBarLeft {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px 0;
+  gap: 20px;
+}
+
+.navBar .navBarCenter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.navBar .navBarCenter .navBarSearch {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px;
+  gap: 10px;
+  border: 1px solid #494c4d;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.navBar .sitename {
+    display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: aliceblue;
+
+}
+
+.navBar .navBarRight {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.navBar .navBarRight .userImg {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.navBar .navBarRight span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+

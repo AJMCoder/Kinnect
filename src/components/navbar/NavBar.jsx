@@ -1,6 +1,7 @@
 import "./navBar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHouse, faMoon, faBorderAll, faUser, faEnvelope, faBell} from "@fortawesome/free-solid-svg-icons";
+import { faHouse, faMoon, faBorderAll, faUser, faEnvelope, faBell, faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
@@ -10,17 +11,22 @@ const NavBar = () => {
                 <FontAwesomeIcon icon={faMoon} className="navBarIcon"/>
                 <FontAwesomeIcon icon={faBorderAll} className="navBarIcon"/>
             </div>
+                <Link to="/">
+                    <span className="sitename">Kinnect</span>
+                </Link>
             <div className="navBarCenter">
-                <input type="text" placeholder="Search for friends, posts or videos" className="navBarSearch"/>
+                <FontAwesomeIcon icon={faMagnifyingGlass} className="navBarIcon"/>
+                    <input type="text" placeholder="Search..." className="navBarSearch"/>
             </div>
             <div className="navBarRight">
                 <FontAwesomeIcon icon={faUser} className="navBarIcon"/>
                 <FontAwesomeIcon icon={faEnvelope} className="navBarIcon"/>
                 <FontAwesomeIcon icon={faBell} className="navBarIcon"/>
-                <img src="/assets/person/1.jpeg" alt="" className="navBarImg"/>
+                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="" className="userImg"/>
+                <span>John Smith</span>
             </div>
         </div>
     );
 };
 
-export default NavBar;
+export default NavBar; 
