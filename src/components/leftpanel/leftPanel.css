@@ -1,0 +1,35 @@
+.LeftPanel {
+}
+
+.LeftPanel .container {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.LeftPanel .container .sidebar {
+
+}
+
+.LeftPanel .container .sidebar .user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.LeftPanel .container .sidebar .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.LeftPanel .container .sidebar .list {
+    gap: 20px;
+}
+
+.LeftPanel .container .sidebar .list img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
