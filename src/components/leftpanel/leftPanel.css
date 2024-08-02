@@ -1,5 +1,8 @@
 .LeftPanel {
     flex: 1;
+    position: sticky;
+    top: 62px;
+    height: calc(100vh - 70px);
     border-right: 1px solid #a9abac;
     border-bottom: 1px solid #a9abac;
 }

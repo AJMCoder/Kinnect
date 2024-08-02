@@ -1,5 +1,67 @@
 .RightPanel {
     flex: 3;
+    position: sticky;
+    top: 62px;
+    height: calc(100vh - 70px);
     border-left: 1px solid #a9abac;
     border-bottom: 1px solid #a9abac;
+}
+
+.RightPanel .container {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.RightPanel .container .sidebar {
+    align-items: center;
+}
+
+.RightPanel .container .sidebar span {
+    display: flex;
+    align-items: center;
+}
+
+.RightPanel .container .sidebar .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.RightPanel .container .sidebar .user .userDetails {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.RightPanel .container .sidebar .user img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.RightPanel .container .sidebar .user .buttons {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 5px;
+}
+
+button {
+    border: none;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:first-child {
+    background-color: #12b127;
+}
+
+button:last-child {
+    background-color: #ff0000;
 }
