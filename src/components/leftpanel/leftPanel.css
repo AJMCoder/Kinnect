@@ -1,4 +1,7 @@
 .LeftPanel {
+    flex: 1;
+    border-right: 1px solid #a9abac;
+    border-bottom: 1px solid #a9abac;
 }
 
 .LeftPanel .container {
@@ -7,13 +10,14 @@
 }
 
 .LeftPanel .container .sidebar {
-
+    align-items: center;
 }
 
 .LeftPanel .container .sidebar .user {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
+    margin-bottom: 10px;
 }
 
 .LeftPanel .container .sidebar .user img {
@@ -24,12 +28,15 @@
 }
 
 .LeftPanel .container .sidebar .list {
-    gap: 20px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
 }
 
 .LeftPanel .container .sidebar .list img {
     width: 30px;
     height: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
 }
