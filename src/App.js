@@ -11,6 +11,7 @@ import LeftPanel from './components/leftpanel/LeftPanel';
 import RightPanel from './components/rightpanel/RightPanel';
 //import Home from './pages/home/Home';
 //import Profile from './pages/profile/Profile';
+import './App.css';
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
 
   const Layout = ()=>{
     return(
-      <div>
+      <div className='theme'>
         <NavBar/>
         <div style={{display:"flex"}}>
           <LeftPanel />

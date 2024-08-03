@@ -3,13 +3,11 @@
     position: sticky;
     top: 62px;
     height: calc(100vh - 70px);
-    background-color: rgb(221, 224, 228);
 }
 
 .RightPanel .container {
     padding: 20px;
     margin-top: 10px;
-    background-color: rgb(221, 224, 228);
 }
 
 .RightPanel .container .sidebar {
