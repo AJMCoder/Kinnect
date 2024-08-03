@@ -3,22 +3,29 @@
     position: sticky;
     top: 62px;
     height: calc(100vh - 70px);
-    border-left: 1px solid #a9abac;
-    border-bottom: 1px solid #a9abac;
+    background-color: rgb(221, 224, 228);
 }
 
 .RightPanel .container {
     padding: 20px;
     margin-top: 10px;
+    background-color: rgb(221, 224, 228);
 }
 
 .RightPanel .container .sidebar {
-    align-items: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: white;
+    -webkit-box-shadow: 0px 3px 8px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 3px 8px 2px rgba(0,0,0,0.5);
+    box-shadow: 0px 3px 8px 2px rgba(0,0,0,0.5);
 }
 
 .RightPanel .container .sidebar span {
     display: flex;
     align-items: center;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .RightPanel .container .sidebar .user {
@@ -34,6 +41,13 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    position: relative;
+}
+
+p {
+    font-weight: 400;
 }
 
 .RightPanel .container .sidebar .user img {
@@ -64,4 +78,14 @@ button:first-child {
 
 button:last-child {
     background-color: #ff0000;
+}
+
+.online {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #12b127;
+    position: absolute;
+    top: 0;
+    left: 21px;
 }

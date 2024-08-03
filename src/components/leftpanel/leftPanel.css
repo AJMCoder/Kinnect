@@ -3,17 +3,21 @@
     position: sticky;
     top: 62px;
     height: calc(100vh - 70px);
-    border-right: 1px solid #a9abac;
-    border-bottom: 1px solid #a9abac;
+    background-color: rgb(221, 224, 228);
 }
 
 .LeftPanel .container {
+    display: flex;
+    height: 100vh;
     padding: 20px;
     margin-top: 10px;
+    background-color: rgb(221, 224, 228);
 }
 
 .LeftPanel .container .sidebar {
     align-items: center;
+    padding: 20px;
+    margin-right: 30px;
 }
 
 .LeftPanel .container .sidebar .user {
