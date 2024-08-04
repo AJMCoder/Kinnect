@@ -11,15 +11,15 @@ const Posts = () => {
       userId:1,
       profilePicture: "https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-      img:"https://images.pexels.com/photos/3586765/pexels-photo-3586765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      img:"https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
       id:2,
-      name:"Jane Smith",
+      name:"John Smith",
       userId:2,
       profilePicture: "https://images.pexels.com/photos/610294/pexels-photo-610294.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet.",
-      img:"https://images.pexels.com/photos/3586765/pexels-photo-3586765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      img:"https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
   ];
 

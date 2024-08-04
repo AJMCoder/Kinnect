@@ -6,21 +6,27 @@ import { Link } from "react-router-dom";
 const Post = ({post}) => {
   return (
     <div className="post">
-        <div className="user">
-            <div className="userInfo">
-                <img src={post.img} alt="" />
-                <div className="details">
-                    <Link to={`/profile/${post.userId}`} className="link">
-                    <span>{post.name}</span>
-                    </Link>
+        <div className="container">
+            <div className="user">
+                <div className="userInfo">
+                    <img src={post.profilePicture} alt="" />
+                    <div className="details">
+                        <Link to={`/profile/${post.userId}`} className="name">
+                        <span>{post.name}</span>
+                        </Link>
+                        <span className="postTime"> 30 seconds ago.</span>
+                    </div>
+                </div>
+                <div className="more">
+                    <FontAwesomeIcon icon={faCaretDown} />
                 </div>
             </div>
-            <div className="more">
-                <FontAwesomeIcon icon={faCaretDown} />
+            <div className="content">
+                <p>{post.description}</p>
+                <img src={post.img} alt="" />
             </div>
-        </div>
-        <div className="content"></div>
-        <div className="interact"></div>
+            <div className="interact"></div>
+        </div>    
     </div>
   )
 }
