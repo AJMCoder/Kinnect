@@ -9,7 +9,7 @@ import {
 import NavBar from './components/navbar/NavBar';
 import LeftPanel from './components/leftpanel/LeftPanel';
 import RightPanel from './components/rightpanel/RightPanel';
-//import Home from './pages/home/Home';
+import Home from './pages/home/Home';
 //import Profile from './pages/profile/Profile';
 import './App.css';
 
@@ -47,7 +47,7 @@ function App() {
       children:[
         {
           path: "/",
-          element: <div>Home</div>
+          element: <Home />,
         },
         {
           path: "/profile/:id",
