@@ -1,6 +1,6 @@
 import "./post.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown, faCommentDots, faShare, faHeart} from "@fortawesome/free-solid-svg-icons";
+import { faEllipsis, faCommentDots, faShare, faHeart} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 const Post = ({post}) => {
@@ -11,14 +11,14 @@ const Post = ({post}) => {
                 <div className="userInfo">
                     <img src={post.profilePicture} alt="" />
                     <div className="details">
-                        <Link to={`/profile/${post.userId}`} className="name">
+                        <Link to={`/profile/${post.userId}`} className="name" style={{textDecoration: "none"}}>
                         <span>{post.name}</span>
                         </Link>
                         <span className="postTime"> 30 seconds ago.</span>
                     </div>
                 </div>
                 <div className="more">
-                    <FontAwesomeIcon icon={faCaretDown} />
+                    <FontAwesomeIcon icon={faEllipsis} />
                 </div>
             </div>
             <div className="content">
