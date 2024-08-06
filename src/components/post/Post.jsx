@@ -3,8 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faCommentDots, faShare, faHeart} from "@fortawesome/free-solid-svg-icons";
 import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
+import Comments from "../comments/Comments";
+import { useState } from "react";
 
 const Post = ({post}) => {
+    
+    const [commentOpen, setCommentOpen] = useState(false);
 
     //Temp
   const liked = false;
@@ -35,7 +39,7 @@ const Post = ({post}) => {
                     {liked ? <FontAwesomeIcon icon={faHeart} /> : <FontAwesomeIcon icon={faHeartRegular} />}
                     Like
                 </div>
-                <div className="actions">
+                <div className="actions" onClick={()=>setCommentOpen(!commentOpen)}>
                     <FontAwesomeIcon icon={faCommentDots} />
                     Comment
                 </div>
@@ -44,6 +48,7 @@ const Post = ({post}) => {
                     Share
                 </div>        
             </div>
+            {commentOpen && <Comments />}
         </div>    
     </div>
   )

@@ -2,10 +2,10 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(233, 233, 224); /* Set the background color here */
+  background-color: rgb(233, 233, 224);
 }
 
 .theme {
-  min-height: 100vh; /* Ensure the theme container covers at least the viewport height */
-  background-color: inherit; /* Inherit the background color from the body */
+  min-height: 100vh;
+  background-color: inherit;
 }
