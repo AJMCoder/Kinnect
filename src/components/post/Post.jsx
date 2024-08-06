@@ -1,9 +1,14 @@
 import "./post.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsis, faCommentDots, faShare, faHeart} from "@fortawesome/free-solid-svg-icons";
+import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 
 const Post = ({post}) => {
+
+    //Temp
+  const liked = false;
+
   return (
     <div className="post">
         <div className="container">
@@ -25,7 +30,20 @@ const Post = ({post}) => {
                 <p>{post.description}</p>
                 <img src={post.img} alt="" />
             </div>
-            <div className="interact"></div>
+            <div className="interact">
+                <div className="actions">
+                    {liked ? <FontAwesomeIcon icon={faHeart} /> : <FontAwesomeIcon icon={faHeartRegular} />}
+                    Like
+                </div>
+                <div className="actions">
+                    <FontAwesomeIcon icon={faCommentDots} />
+                    Comment
+                </div>
+                <div className="actions">
+                    <FontAwesomeIcon icon={faShare} />
+                    Share
+                </div>        
+            </div>
         </div>    
     </div>
   )
