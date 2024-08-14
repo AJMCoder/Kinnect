@@ -11,7 +11,7 @@ export const AuthContextProvider = ({ children }) => {
         setCurrentUser({
             id:1,
             name:"John Smith",
-            profilePicture:"https://randomuser.me/api/port",
+            profilePicture:"https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
         });
     };
 
@@ -24,4 +24,4 @@ export const AuthContextProvider = ({ children }) => {
       {children}
     </AuthContext.Provider>
   );
-}
+};

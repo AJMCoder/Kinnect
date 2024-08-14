@@ -11,13 +11,13 @@ import LeftPanel from './components/leftpanel/LeftPanel';
 import RightPanel from './components/rightpanel/RightPanel';
 import Home from './pages/home/Home';
 //import Profile from './pages/profile/Profile';
-// import { useContext } from 'react';
-// import { AuthContext } from './context/AuthContext';
+import { useContext } from 'react';
+import { AuthContext } from './context/authContext';
 import './App.css';
 
 function App() {
 
-  const currentUser = true;
+  const {currentUser} = useContext(AuthContext);
 
   const Layout = ()=>{
     return(

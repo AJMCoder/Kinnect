@@ -2,8 +2,13 @@ import "./navBar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faMoon, faBorderAll, faUser, faEnvelope, faBell, faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../context/authContext";
+import { useContext } from "react";
 
 const NavBar = () => {
+
+    const {currentUser} = useContext(AuthContext);
+
     return (
         <div className="navBar">
             <div className="navBarLeft">
@@ -22,8 +27,8 @@ const NavBar = () => {
                 <FontAwesomeIcon icon={faUser} className="navBarIcon"/>
                 <FontAwesomeIcon icon={faEnvelope} className="navBarIcon"/>
                 <FontAwesomeIcon icon={faBell} className="navBarIcon"/>
-                <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="" className="user"/>
-                <span>John Smith</span>
+                <img src={currentUser.profilePicture} alt="" className="user"/>
+                <span>{currentUser.name}</span>
             </div>
         </div>
     );
