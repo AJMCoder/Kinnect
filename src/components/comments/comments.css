@@ -36,7 +36,6 @@
 }
 
 .comments .commentTime {
-    flex: 1;
     display: flex;
     align-self: center;
     align-items: flex-end;
@@ -46,4 +45,31 @@
 
 .comments .details .date span {
     margin-right: 5px;
+}
+
+/* Comments Form */
+
+.comments .publish {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.comments .publish input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.comments .publish button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
 }
