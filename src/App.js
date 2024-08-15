@@ -10,10 +10,11 @@ import NavBar from './components/navbar/NavBar';
 import LeftPanel from './components/leftpanel/LeftPanel';
 import RightPanel from './components/rightpanel/RightPanel';
 import Home from './pages/home/Home';
-//import Profile from './pages/profile/Profile';
+import Profile from './pages/profile/Profile';
 import { useContext } from 'react';
 import { AuthContext } from './context/authContext';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -53,7 +54,7 @@ function App() {
         },
         {
           path: "/profile/:id",
-          element: <div>Profile</div>
+          element: <Profile />,
         },
       ]
     },
