@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-const Ratings = ({ count = 5, size = 24, color = "gold" }) => {
+const Ratings = ({ count = 5, size = 24, color = "gold", averageRating = 0 }) => {
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
             {[...Array(count)].map((_, index) => {
                 const ratingValue = index + 1;
 
@@ -33,6 +33,9 @@ const Ratings = ({ count = 5, size = 24, color = "gold" }) => {
                     </label>
                 );
             })}
+            <span style={{ marginLeft: '8px', fontSize: '1.2rem' }}>
+                {averageRating.toFixed(1)} / {count}
+            </span>
         </div>
     );
 };
