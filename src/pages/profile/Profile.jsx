@@ -4,7 +4,6 @@ import { faReddit, faSquareXTwitter, faSquareYoutube } from "@fortawesome/free-b
 import { faEarthAmerica, faEllipsisVertical} from "@fortawesome/free-solid-svg-icons";
 import { faMessage } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import React from "react";
 import Ratings from "../../components/Rating/Ratings";
 
@@ -20,9 +19,24 @@ const Profile = () => {
                         <div className="card-body">
                             <h5 className="card-title">John Smith</h5>
                             <p className="card-text">Full time gamer, part-time Developer</p>
-                            <p className="card-text"><small className="text-muted">@johnSmith</small></p>
+                            <p className="card-text"><small className="text-muted">@johnsmith</small></p>
                             <Ratings />
                             <a href="#" className="btn btn-primary">Follow</a>
+                            <a href="#" className="btn btn-outline-primary">
+                                    <FontAwesomeIcon icon={faMessage} className="me-2" />
+                                    Message
+                                </a>
+                            <div className="social-media-links mt-3">
+                                <a href="https://x.com" target="_blank" rel="noopener noreferrer" className="me-3">
+                                    <FontAwesomeIcon icon={faSquareXTwitter} size="2x" style={{ color: '#3b5998' }} />
+                                </a>
+                                <a href="https://reddit.com" target="_blank" rel="noopener noreferrer" className="me-3">
+                                    <FontAwesomeIcon icon={faReddit} size="2x" style={{ color: '#FF4500' }} />
+                                </a>
+                                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                    <FontAwesomeIcon icon={faSquareYoutube} size="2x" style={{ color: '#FF0000' }} />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
