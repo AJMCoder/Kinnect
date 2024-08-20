@@ -25,8 +25,8 @@ const Profile = () => {
                             <p className="card-text">Full time gamer, part-time Developer</p>
                             <p className="card-text"><small className="text-muted">@johnsmith</small></p>
                             <Ratings averageRating={averageRating} />
-                            <a href="#" className="btn btn-primary">Follow</a>
-                            <a href="#" className="btn btn-outline-primary">
+                            <a href="" className="btn btn-primary">Follow</a>
+                            <a href="" className="btn btn-outline-primary">
                                     <FontAwesomeIcon icon={faMessage} className="me-2" />
                                     Message
                                 </a>

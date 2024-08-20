@@ -1,102 +1,123 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Kinnect
 
-Welcome,
+This is the Frontend for Kinnect built with React Bootstrap.
 
-This is the Code Institute student template for React apps on a cloudbased IDE. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.  
+![Screenshot showing responsiveness of home page](`not yet added`)
 
-**IMPORTANT:** Do NOT use this template if you are using the **Gitpod IDE**. Use the instructions in **[this repo](https://github.com/Code-Institute-Org/cra-template-moments)** instead.
+Kinnect is a place where people alike can come together to share their love of gaming. Users can share their experiences, like and write comments, follow other users and rate user profiles. User have full customisation of their profile, have space to write about themselves and what they enjoy and add a profile picture.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about this template and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **13th November, 2023**
+This is the Frontend of the application, built in React.
 
-## IDE Reminders
+- The deployed version of the API is [HERE](`yet to add`).
+- The deployed version of the full site built in React is [HERE](`yet to add`).
+- The frontend repository is [HERE](`yet to add`).
 
-In most cloudbased IDEs, you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Wireframes
 
-To log into the **Heroku toolbelt CLI**:
+`TBA`
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In your IDE, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## User Stories
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Admin
 
-## Getting Started with Create React App
+**User Stories:**
+- As a **site admin** I can **add, edit, and delete profiles from the database** so that **users are safe from spammers or account hackers**
+- As a **site admin** I can **remove posts or comments if they are not appropriate or relevant** so that **the site is enjoyable and safe for all users**
+- As a **site admin** I can **see lists of all user profiles, posts, likes, and comments, followers and ratings** so that **I have an overview of all activity on the site**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Profile Management
 
-### Available Scripts
+**User Stories:**
+- As a **user** I can **sign up for an account** so that I can **make and like posts, and follow other users**
+- As a **user** I can **log in and out of my account** so that I can **access the site from different devices and keep my account secure**
+- As a **user** I can **add a profile picture and description** so that **I can personalise my profile**
+- As a **user** I can **delete my profile** so that **my personal details are not saved if I don't want to use the site anymore**
 
-In the project directory, you can run:
+### Post Management
 
-#### `npm install`
+**User Stories:**
+- As a **user** I can **add a new post** so that **I can share my interests or achievements** 
+- As a **user** I can **edit my posts** so that **I can make update if i make further progress**
+- As a **user** I can **delete my posts** so that **I can remove posts made in error, or that I don't want displayed on my profile anymore**
+- As a **user** I can **like and unlike other users' posts** so that **I can engage with content that I enjoy**
 
-Installs the required npm packages.
+### Ratings Management
 
-#### `npm start`
+**User Stories:**
+- As a **user** I can **rate other users on their profiles** so that **express how i feel they are performing or quality of content**
+- As a **user** I can **view ratings of users profiles** so that **I can see how others are viewing them**
+- As a **user** I can **update my rating** so that **it it relevant depending on their recent posts and shares**
 
-Runs the app in the development mode.\
-Open port 3000 to view it in the browser.
+## Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Existing Features
 
-#### `npm test`
+- **Navigation Bar**
+    - The navigation bar appears across all pages of the application, and changes depending whether the user is logged in or not.
+    ![Navbar]()
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Sign In Page**
+    - The sign in page allows an existing user to sign in to the site. There is a prompt redirecting the user to the sign up page if they don't already have an account. The layout for the sign in and sign up pages are both the same for visual / stylistic consistency.
+    ![Sign in page]()
 
-#### `npm run build`
+- **Registration Page**
+    - The registration page allows a user to create a new account. There is a prompt redirecting the user to the sign in page if they already have an account.
+    ![Registration page]()
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Home Page**
+    - When the user is logged in, they are directed to the home page, where they can view: Posts from users they follow, users that they can follow, likes and comments, a link to their own profile and the navigation bar across to top.
+    ![Home page]()
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Rating**
+    - The rating feature starts every new account at 5. When users view a profile, they have the option to rate it. This rating can represent how they view the persons profile in general or maybe the posts the user has published. It is a scale from 1 - 5 in scale.
+    ![Rating]()
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Post**
+    - A user can post anything gaming related or acheivement related within a game so that user that follow them can view it and interact with it. Users can like or comment on the post.
+    ![Post]()
 
-#### `npm run eject`
+- **Comment**
+    - A user can leave a comment on a post. There is a form beneath each post with a free text box. Comments are displayed with the user's profile photo, a link to their profile, and a time stamp showing the date & time the comment was left.
+    ![Comment]()
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Like**
+    - Users have the option to like and post that appears in their feed. When a user likes a post, they can see this as the heart icon, symbolising a like, changes colour.
+    [Like]()
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Follow**
+    - Users have the ability to follow other users so that their feed can contain the posts from said users for them to view.
+    [Follow]()
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Profile Page**
+    - The profile page allows a user to view their own or another user's profile. Users can edit their own profile by adding an image and a bio. The page also displays the number posts and rating that a user has, and shows a feed of their posts below their bio.
+    ![Profile page]()
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-### Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Testing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+*Link to TESTING.md*
 
-#### Code Splitting
+## Validator Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Lighthouse Testing
 
-#### Analyzing the Bundle Size
+## Bug Fixing:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- When running tests for the Post list, i discovered an error "ERROR: test_can_list_posts (posts.tests.PostListViewTests.test_can_list_posts)". Reading through the error message allowed me to rectify the issue and traceback to the Post.views file where the error persists because the request context was not being passed to the serializer in the PostListView.
+- When going back through my work, i was testing the links for 'profiles', and 'posts' before moving forward into 'comments'. I discovered that the '/posts' address was throwing out and operational error for the post.image_filter that had been added. Saving the file and reloading the page, the error persisted. I then realised that it was added after the initial migration of the posts app and so i did 'python manage.py makemigrations' and then 'python manage.py migrate' and reloaded the website and saw that it had fixed the issue.
 
-#### Making a Progressive Web App
+## Unfixed Bugs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-#### Advanced Configuration
+## Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Heroku Deployment
 
-#### Deployment
+## Preparing File for Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Final Deploy
 
-#### `npm run build` fails to minify
+## Credits
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
----
-
-Happy coding!
+## Media
