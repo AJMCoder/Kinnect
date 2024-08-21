@@ -1,4 +1,5 @@
 import "./rightPanel.css";
+{/* Code adapted from Lama Dev social media guide */}
 
 const RightPanel = () => {
     return (

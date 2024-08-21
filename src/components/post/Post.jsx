@@ -5,6 +5,7 @@ import { faHeart as faHeartRegular } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import Comments from "../comments/Comments";
 import { useState } from "react";
+{/* Code adapted from Lama Dev social media guide */}
 
 const Post = ({post}) => {
     

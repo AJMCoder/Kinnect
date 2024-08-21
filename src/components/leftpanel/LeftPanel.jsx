@@ -5,6 +5,7 @@ import Messages from "../../assets/messages.png";
 import Videos from "../../assets/videos.png";
 import { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
+{/* Code adapted from Lama Dev social media guide */}
 
 const LeftPanel = () => {
 

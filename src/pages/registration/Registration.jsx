@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./registration.css"
+{/* Code adapted from Lama Dev social media guide */}
 
 const Registration = () => {
   return (

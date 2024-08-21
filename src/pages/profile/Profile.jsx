@@ -6,6 +6,7 @@ import { faMessage } from "@fortawesome/free-regular-svg-icons";
 import { Link } from "react-router-dom";
 import React from "react";
 import Ratings from "../../components/Rating/Ratings";
+{/* Code adapted from Lama Dev social media guide */}
 
 const Profile = () => {
 

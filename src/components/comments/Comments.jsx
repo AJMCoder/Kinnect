@@ -1,6 +1,7 @@
 import "./comments.css"
 import { useContext, useState } from "react";
 import { AuthContext } from "../../context/authContext";
+{/* Code adapted from Lama Dev social media guide */}
 
 const Comments = () => {
 

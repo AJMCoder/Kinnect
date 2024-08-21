@@ -4,6 +4,7 @@ import { faHouse, faMoon, faBorderAll, faUser, faEnvelope, faBell, faMagnifyingG
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import { useContext } from "react";
+{/* Code adapted from Lama Dev social media guide */}
 
 const NavBar = () => {
 

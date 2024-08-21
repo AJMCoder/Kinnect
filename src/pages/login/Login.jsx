@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { AuthContext } from "../../context/authContext"
 import { useContext } from "react"
 import "./login.css"
-
+{/* Code adapted from Lama Dev social media guide */}
 const Login = () => {
 
   const {login} = useContext(AuthContext);
