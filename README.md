@@ -92,11 +92,17 @@ This is the Frontend of the application, built in React.
     - The profile page allows a user to view their own or another user's profile. Users can edit their own profile by adding an image and a bio. The page also displays the number posts and rating that a user has, and shows a feed of their posts below their bio.
     ![Profile page]()
 
+## Future Features
 
+Some features that would benefit the site and its usability would be:
+
+- The ability to publish videos.
+- The ability to join small groups maybe for specific gaming communities to join and chat together.
+- The ability to have games liked listed in a users profile with images of said games.
 
 ## Testing
 
-*Link to TESTING.md*
+Please see my [testing file](Testing.md) for all manual and validator testing.
 
 ## Validator Testing
 
@@ -110,14 +116,62 @@ This is the Frontend of the application, built in React.
 ## Unfixed Bugs
 
 
-## Deployment
+### Local Deployment
 
-## Heroku Deployment
+_Gitpod_ IDE was used to write the code for this project.
 
-## Preparing File for Deployment
+To preview the project in the development environment, run the following command in the terminal:
+`npm start`. This will open port 3000. Click _Open Browser_ when the popup window appears to open the preview in a new window, or _Open Preview_ to open it within the IDE.
 
-## Final Deploy
+To make a local copy of this repository, you can clone the project by typing the follow into your IDE terminal:
+
+- `git clone https://github.com/AJMCoder/Kinnect.git`
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://ajmcoder-kinnect-i5d87yz316m.ws.codeinstitute-ide.net)
+
+### Heroku Deployment
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+- Select _New_ in the top-right corner of your Heroku Dashboard, and select _Create new app_ from the dropdown menu.
+- Enter a name for your app. The app name must be unique, so you need to adjust the name until you find a name that hasn't been used.
+- From the dropdown, choose the region closest to you (EU or USA), and finally, select _Create App_.
+- When the app is created, from the _Deploy_ tab, click on _Github_, enter the name of your GitHub repository, and click _Connect_.
+- Optionally, turn on automatic deployments, which will deploy to Heroku every time an update has been pushed to GitHub.
+- To deploy to Heroku the first time, click _Deploy_ near the bottom of the page.
+- _Note:_ unlike the backend application, there is no need to set any Config Vars for the frontend.
+
+### Preparing the File for Deployment
+
+Before your final deployment, complete the following steps:
+
+- In your `index.js` file, remove the `React.StrictMode` component (be sure to delete both opening and closing tags). This is not necessary outside of production.
+- In the `package.json file`, in the “scripts” section, add the following prebuild command:
+  `"heroku-prebuild": "npm install -g serve",`. This will install a package needed to serve our single page application on heroku
+- Create a file called `Procfile` at the root of the project, and in the file, paste in the following web command:
+  `web: serve -s build`.
+
+### Final Deployment
+
+- From Gitpod, run a final `git add .`, `git commit -m` with commit message, and `git push`.
+- If automatic deploys are enabled in Heroku, the app is now deployed!
+- If not, navigate to the _Deploy_ tab on Heroku. Scroll to the bottom of the page, and click _Deploy Branch_.
+- Your app is now deployed.
 
 ## Credits
 
-## Media
+### Content
+
+- Code throughout the project was adapted from the Code Institute Moments walkthrough project as well as [Lama Dev](https://www.youtube.com/@LamaDev) front end socail media application walkthrough.
+- This [video](https://www.youtube.com/watch?v=rw3eZ6XodN8&t=21s) was used to understand how a star rating system can be applied to a profile.
+- [ChatGPT](https://chatgpt.com/) was used to create some of the filler text about the site, such as the text on the sign up and login pages.
+- The [video](https://www.youtube.com/watch?v=i1FeOOhNnwU&list=WL&index=10&t=455s) was used to help with the CSS layout of the website and help refresh my understanding of it.
+- Deployment steps are adapted from Code Institute's Momments walkthrough.
+
+### Media
+
+- I used [pexels]() for all of my images.
+- I used [font awesome]() for the majority of my icons used.
+- I used [Google fonts]() for some of the icons required in the project.
