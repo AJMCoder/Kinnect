@@ -173,5 +173,5 @@ Before your final deployment, complete the following steps:
 ### Media
 
 - I used [pexels]() for all of my images.
-- I used [font awesome]() for the majority of my icons used.
+- I used [font awesome]() for the majority of my icons used
 - I used [Google fonts]() for some of the icons required in the project.
