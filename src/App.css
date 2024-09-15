@@ -1,5 +1,4 @@
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   background-color: rgb(233, 233, 224);
@@ -8,4 +7,5 @@ html, body {
 .theme {
   min-height: 100vh;
   background-color: inherit;
+  padding-top: 60px;
 }

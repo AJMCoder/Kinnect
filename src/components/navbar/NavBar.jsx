@@ -1,37 +1,51 @@
-import "./navBar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouse, faMoon, faBorderAll, faUser, faEnvelope, faBell, faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import { useContext } from "react";
-{/* Code adapted from Lama Dev social media guide */}
+import { Navbar, Nav, Form, FormControl, Image } from 'react-bootstrap';
+//{/* import "./navBar.css"; NEEDS AMMENDING*/}
+//{/* Code adapted from Lama Dev social media guide */}
 
 const NavBar = () => {
-
-    const {currentUser} = useContext(AuthContext);
+    const { currentUser } = useContext(AuthContext);
 
     return (
-        <div className="navBar">
-            <div className="navBarLeft">
-                <FontAwesomeIcon icon={faHouse} className="navBarIcon"/>
-                <FontAwesomeIcon icon={faMoon} className="navBarIcon"/>
-                <FontAwesomeIcon icon={faBorderAll} className="navBarIcon"/>
-            </div>
-                <Link to="/">
-                    <span className="sitename">Kinnect</span>
-                </Link>
-            <div className="navBarCenter">
-                <FontAwesomeIcon icon={faMagnifyingGlass} className="navBarIcon"/>
-                    <input type="text" placeholder="Search..." className="navBarSearch"/>
-            </div>
-            <div className="navBarRight">
-                <FontAwesomeIcon icon={faUser} className="navBarIcon"/>
-                <FontAwesomeIcon icon={faEnvelope} className="navBarIcon"/>
-                <FontAwesomeIcon icon={faBell} className="navBarIcon"/>
-                <img src={currentUser.profilePicture} alt="" className="user"/>
-                <span>{currentUser.name}</span>
-            </div>
-        </div>
+        <Navbar bg="light" expand="lg" className="navBar" fixed= "top">
+            <Navbar.Brand as={Link} to="/" className="sitename">
+                Kinnect
+            </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto navBarLeft">
+                    <Nav.Link as={Link} to="/">
+                        <FontAwesomeIcon icon={faHouse} className="navBarIcon" /><span className="ml-2">Home</span>
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="#">
+                        <FontAwesomeIcon icon={faBorderAll} className="navBarIcon" />
+                    </Nav.Link>
+                </Nav>
+                <Form inline className="navBarCenter mx-auto">
+                    <FontAwesomeIcon icon={faMagnifyingGlass} className="navBarIcon" />
+                    <FormControl type="text" placeholder="Search..." className="navBarSearch ml-2" />
+                </Form>
+                <Nav className="ml-auto navBarRight">
+                    <Nav.Link as={Link} to="#">
+                        <FontAwesomeIcon icon={faUser} className="navBarIcon" /><span className="ml-2">Sign In</span>
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="#">
+                        <FontAwesomeIcon icon={faUser} className="navBarIcon" /><span className="ml-2">Sign Up</span>
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="#">
+                        <FontAwesomeIcon icon={faEnvelope} className="navBarIcon" />
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="#">
+                        <Image src={currentUser.profilePicture} roundedCircle className="user" width="30" height="30" alt="Profile" />
+                        <span className="ml-2">{currentUser.name}</span>
+                    </Nav.Link>
+                </Nav>
+            </Navbar.Collapse>
+        </Navbar>
     );
 };
 

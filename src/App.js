@@ -15,7 +15,7 @@ import { useContext } from 'react';
 import { AuthContext } from './context/authContext';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-{/* Code adapted from Lama Dev social media guide */}
+//{/* Code adapted from Lama Dev social media guide */}
 
 function App() {
 

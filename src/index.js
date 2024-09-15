@@ -4,7 +4,7 @@ import App from './App';
 import {AuthContextProvider} from './context/authContext';
 import reportWebVitals from './reportWebVitals';
 
-{/* Code adapted from Lama Dev social media guide */}
+//{/* Code adapted from Lama Dev social media guide */}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
