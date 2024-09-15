@@ -15,6 +15,7 @@ import { useContext } from 'react';
 import { AuthContext } from './context/authContext';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './API/axios.Defaults';
 //{/* Code adapted from Lama Dev social media guide */}
 
 function App() {
