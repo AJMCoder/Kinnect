@@ -1,10 +1,8 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import "./registration.css"
 import { Alert } from "react-bootstrap";
-//import { set } from "msw/lib/types/context";
-//{/* Code adapted from Lama Dev social media guide */}
+import "./registration.css";
 
 const Registration = () => {
   const [signUpData, setSignUpData] = useState({
@@ -41,17 +39,24 @@ const Registration = () => {
       return;
     }
     try {
-      await axios.post("http://kinnect-api-cf0f665319fa.herokuapp.com/dj-rest-auth/registration/", signUpData, {
+      console.log("Sending data:", signUpData); // Log the request payload
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/dj-rest-auth/registration/`, signUpData, {
         headers: {
           "Content-Type": "application/json",
         },
       });
+      console.log("Server response:", response); // Log the server response
       setSuccess("Registration successful. Redirecting to login page...");
+      setError({}); // Clear any previous errors
       setTimeout(() => {
-        navigate("/login");
+        navigate("/Login");
       }, 3000); // Redirect to login page after 3 seconds
     } catch (err) {
-      setError(err.response?.data || {});
+      console.error("Error during registration:", err);
+      // Log detailed error response from the server
+      console.error("Server error response:", err.response ? err.response.data : err.message);
+      setError(err.response?.data || { general: "Registration failed. Please try again." });
+      setSuccess(''); // Clear any previous success message
     }
   };
 
@@ -74,6 +79,7 @@ const Registration = () => {
         <div className="right">
           <h1>Sign Up</h1>
           {success && <Alert variant="success">{success}</Alert>}
+          {error.general && <Alert variant="danger">{error.general}</Alert>}
           <form onSubmit={handleSubmit}>
             <input
               type="text"
